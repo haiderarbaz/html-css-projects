@@ -1,1 +1,1 @@
-# the-html-magazine
+# The Html Magazine
