@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   /* SHORT HAND PROPERTY */
@@ -50,8 +51,9 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  /* padding: 50px 0; */
+  /* width: 500px; */
+  padding: 50px 40px;
 }
 
 /* Below is the example of Combining Selectors */
@@ -99,6 +101,7 @@ h4 {
   /* font-family: sans-serif; */
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -149,6 +152,7 @@ footer p {
 }
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* .first-li {
@@ -252,4 +256,46 @@ h2::after {
   position: absolute;
   top: -12px;
   right: -25px;
+}
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 120px; */
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* How to solve collapsing elements */
+/* BY USING PSUEDO ELEMENTS */
+/* PSUEDO ELEMENTS ::after and ::before are inline elements */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
