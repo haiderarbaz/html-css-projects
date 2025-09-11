@@ -55,7 +55,7 @@ body {
   color: #777;
   font-size: 12px;
   font-weight: bold;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* SALE */
@@ -93,8 +93,8 @@ body {
 .color {
   width: 25px;
   height: 25px;
-  display: inline-block;
-  margin-right: 8px;
+  /* display: inline-block; */
+  /* margin-right: 8px; */
 }
 
 .one {
@@ -155,7 +155,7 @@ body {
 }
 
 /* FLOATS */
-.price {
+/* .price {
   float: left;
 }
 
@@ -188,4 +188,57 @@ body {
 
 .details-title {
   margin-top: 0;
+} */
+
+/* FLEXBOX */
+
+.price {
+  font-size: 24px;
+}
+
+/* .shipping {
+} */
+.product-description {
+  margin-bottom: 10px;
+}
+
+/* .product-img {
+  float: left;
+  margin-right: 40px;
+} */
+
+.product-info {
+  /* width: 243px;
+  float: left; */
+  /* margin-right: 40px; */
+  margin-top: 20px;
+  flex: 1;
+}
+
+.product-details {
+  /* width: 243px;
+  float: left; */
+  margin-top: 20px;
+  flex: 1;
+}
+
+.details-title {
+  margin-top: 0;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-color-options {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
 }
